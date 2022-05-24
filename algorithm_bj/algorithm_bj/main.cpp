@@ -1,48 +1,40 @@
 #include <iostream>
-#include <algorithm>
+#include <cmath>
 
 using namespace std;
 
-int T, x1, y1, r1, x2, y2, r2;
+int T;
+int x1;
+int y3;
+int r1;
+int x2;
+int y2;
+int r2;
 
-int chkCrossPoint(int x1, int y1, int r1, int x2, int y2, int r2){
-    int maxRad = max(r1, r2);
-    maxRad = maxRad*maxRad;
-    int dist = (x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2);
-    if(x1 == x2 && y1 == y2 && r1 == r2){ // 무한개의 점이 나올 경우
-        return -1;
-    }
-    if(maxRad > dist){
-        if(dist < (r1 - r2) * (r1 - r2)){
-            return 0;
-        }else if(dist == (r1 - r2) * (r1 - r2)){
-            return 1;
-        }else if(dist > (r1 - r2) * (r1 - r2)){
-            return 2;
-        }
-    }else if(maxRad < dist){
-        if(dist > (r1 + r2) * (r1 + r2)){
-            return 0;
-        }else if(dist == (r1 + r2) * (r1 + r2)){
-            return 1;
-        }else if(dist < (r1 + r2) * (r1 + r2)){
-            return 2;
-        }
-    }else if(maxRad == dist){
-        return 2;
-    }
-    return -1;
+int Abs(int x) {
+    return (int)abs(x);
 }
 
-int main() {
-    
+int Pow(int x) {
+    return (int)pow(x, 2);
+}
+
+int main(void) {
     cin >> T;
-    
-    for (int i = 0; i < T; i++) {
-        cin >> x1 >> y1 >> r1 >> x2 >> y2 >> r2;
-        cout << chkCrossPoint(x1, y1, r1, x2, y2, r2) << '\n';
+    while(T--) {
+        int ans = 0;
+        cin >> x1 >> y3 >> r1 >> x2 >> y2 >>r2;
+
+        if (x1 == x2 && y3 == y2 && r1 == r2) ans = -1;
+
+        if(Abs(x1 + r1) > Abs(x2 + r2) && Abs(x1 - r1) > Abs(x2 - r2) && Abs(y3 + r1) > Abs(y2 + r2) && Abs(y3 - r1) > Abs(y2 - r2)) ans = 0;
+        else if(Abs(x1 + r1) < Abs(x2 + r2) && Abs(x1 - r1) < Abs(x2 - r2) && Abs(y3 + r1) < Abs(y2 + r2) && Abs(y3 - r1) < Abs(y2 - r2)) ans = 0;
+        else if(Abs(x1 + r1) == Abs(x2 + r2) || Abs(x1 - r1) == Abs(x2 - r2) || Abs(y3 + r1) == Abs(y2 + r2) || Abs(y3 - r1) == Abs(y2 - r2))) ans = 1;
+
+        if(Pow(x2 - x1) + Pow(y2 - y3) == Pow(r1 + r2)) ans = 1;
+        else if(Pow(x2 - x1) + Pow(y2 - y3) < Pow(r1 + r2)) ans = 2;
+        else if(Pow(x2 - x1) + Pow(y2 - y3) > Pow(r1 + r2)) ans = 0;
+
+        cout << ans << '\n';
     }
-    
-    
-    return 0;
 }
