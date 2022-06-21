@@ -1,20 +1,12 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <queue>
 
 using namespace std;
 
-int N, x, popElt;
-priority_queue<int, vector<int>, less<int>> pq;
-
 int main(void){
+    int x = (int)3.99;
+    x = 2.3 + x/2;
     
-    ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
-    
-    
+    cout << sizeof(3.5 + 2);
     
     return 0;
 }
-
