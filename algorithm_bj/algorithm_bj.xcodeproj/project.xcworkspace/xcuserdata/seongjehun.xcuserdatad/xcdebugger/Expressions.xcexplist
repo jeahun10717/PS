@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "BFS(int, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "x">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "chkCrossPoint(int, int, int, int, int, int):main.cpp">
          <PersistentStrings>
             <PersistentString
