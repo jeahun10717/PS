@@ -1,57 +1,48 @@
+#include <cmath>
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <queue>
-#include <cstring>
 
 using namespace std;
 
-int M, N, A, B;
-int friendArr[102][102];
-int kbArr[102];
-int check[102];
+long long int a, b, c, d, u;
+int totalCnt;
+long long int aCnt, gCnt;
 
-int BFS(int start, int friendNum){
-    
-    memset(check, -1, sizeof(int)*(friendNum + 1));
-    queue<int> q;
-    check[start] = 0;
-    q.push(start);
-    while (!q.empty()) {
-        int x = q.front(); q.pop();
-        for (int i = 1; i <= friendNum; i++) {
-            if(friendArr[x][i] == 1 && check[i] == -1){
-                check[i] = check[x] + 1;
-                q.push(i);
-            }
-        }
+long long int POW(long long int a, long long int x){
+    long long int result = 1;
+    for (int i = 0; i < x; i++) {
+        result *= a;
     }
-    int KBGNum = 0;
-    for (int i = 1; i <= friendNum; i++) {
-        KBGNum += check[i];
-    }
-    memset(check, 0, sizeof(int) * friendNum);
-    return KBGNum;
-    
+    return result;
 }
 
 int main(void){
     
-    cin >> N >> M;
-    for (int i = 0; i < M; i++) {
-        cin >> A >> B;
-        friendArr[A][B] = 1; friendArr[B][A] = 1;
+    cin >> a >> b >> c >> d >> u;
+    
+    if((u - a) / b >= 0){
+        if((u - a) >= 0) aCnt = ((u - a) / b) + 1;
     }
-    int MIN = 987654321; int minIdx = 0;
-    for (int i = 1; i <= N; i++) {
-        kbArr[i] = BFS(i, N);
-        if(kbArr[i] < MIN){
-            MIN = kbArr[i];
-            minIdx = i;
+    
+    if(d == 1 && c <= u){
+        gCnt++;
+        if(c - a >= 0 && (c - a) % b == 0) totalCnt--;
+    }
+    else if(d > 1){
+        long long int gnum;
+        for (int i = 0;; i++) {
+            gnum = (c * POW(d, i));
+            if(gnum > u) break;
+            else {
+                if(u / c >= 1){
+                    if(gnum - a >= 0 && (gnum - a) % b == 0) totalCnt--;
+                    gCnt++;
+                }
+                
+            }
         }
     }
     
-    cout << minIdx << '\n';
+    cout << totalCnt + gCnt + aCnt << '\n';
     
     return 0;
 }
