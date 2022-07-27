@@ -3,14 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "BFS(int, int):main.cpp">
-         <PersistentStrings>
-            <PersistentString
-               value = "x">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "chkCrossPoint(int, int, int, int, int, int):main.cpp">
          <PersistentStrings>
             <PersistentString
@@ -22,10 +14,24 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "strTableFunc(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;):main.cpp">
+      </ContextState>
+      <ContextState
          contextName = "main:main.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "ve">
+               value = "quadOut">
+            </PersistentString>
+            <PersistentString
+               value = "patCnt">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BFS(int, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "x">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

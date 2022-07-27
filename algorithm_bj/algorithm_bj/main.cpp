@@ -1,48 +1,52 @@
-#include <cmath>
 #include <iostream>
+#include <vector>
+#include <cstring>
 
 using namespace std;
 
-long long int a, b, c, d, u;
-int totalCnt;
-long long int aCnt, gCnt;
+int N, inp;
+int graph[101][101];
+int outGrpah[101][101];
+int check[101];
 
-long long int POW(long long int a, long long int x){
-    long long int result = 1;
-    for (int i = 0; i < x; i++) {
-        result *= a;
+void DFS(int start){
+    check[start]++;
+//    outGrpah[prevNode][start] = 1;
+    for (int i = 0; i < N; i++) {
+        if(graph[start][i] == 1 && check[i] <= 1){
+//            outGrpah[start][i] = 1;
+            DFS(i);
+        }
     }
-    return result;
 }
 
 int main(void){
     
-    cin >> a >> b >> c >> d >> u;
-    
-    if((u - a) / b >= 0){
-        if((u - a) >= 0) aCnt = ((u - a) / b) + 1;
-    }
-    
-    if(d == 1 && c <= u){
-        gCnt++;
-        if(c - a >= 0 && (c - a) % b == 0) totalCnt--;
-    }
-    else if(d > 1){
-        long long int gnum;
-        for (int i = 0;; i++) {
-            gnum = (c * POW(d, i));
-            if(gnum > u) break;
-            else {
-                if(u / c >= 1){
-                    if(gnum - a >= 0 && (gnum - a) % b == 0) totalCnt--;
-                    gCnt++;
-                }
-                
-            }
+    cin >> N;
+    vector<int> node(N, 0);
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            cin >> inp;
+            graph[i][j] = inp;
+            if(inp == 1) node[i] = j;
         }
     }
+
+    for (int i = 0; i < N; i++) {
+        DFS(i);
+        for (int idx = 0; idx < N; idx++) {
+            cout << check[idx] << ' ';
+        }
+        cout << '\n';
+        memset(check, 0, sizeof(int) * N);
+    }
     
-    cout << totalCnt + gCnt + aCnt << '\n';
+//    for (int i = 0; i < N; i++) {
+//        for (int j = 0; j < N; j++) {
+//            cout << outGrpah[i][j] << ' ';
+//        }
+//        cout << '\n';
+//    }
     
     return 0;
 }
