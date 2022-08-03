@@ -25,6 +25,9 @@
             <PersistentString
                value = "patCnt">
             </PersistentString>
+            <PersistentString
+               value = "">
+            </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
