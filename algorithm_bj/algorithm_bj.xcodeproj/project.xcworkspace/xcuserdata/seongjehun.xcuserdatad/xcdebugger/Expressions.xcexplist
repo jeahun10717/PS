@@ -20,13 +20,10 @@
          contextName = "main:main.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "quadOut">
+               value = "(k - x) % M">
             </PersistentString>
             <PersistentString
-               value = "patCnt">
-            </PersistentString>
-            <PersistentString
-               value = "check">
+               value = "(k - y) % N">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
