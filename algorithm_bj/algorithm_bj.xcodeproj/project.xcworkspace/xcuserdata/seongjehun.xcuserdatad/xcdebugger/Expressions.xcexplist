@@ -3,26 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "chkCrossPoint(int, int, int, int, int, int):main.cpp">
+         contextName = "DtoB(int, int, int, int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):main.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "dist">
+               value = "DtoBArr">
             </PersistentString>
             <PersistentString
-               value = "maxRad">
+               value = "inpStr[cmdIdx]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "slide(int):main.cpp">
+         contextName = "findCoord(long long):main.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "A">
+               value = "shellVec">
+            </PersistentString>
+            <PersistentString
+               value = "(N - 2 * (i-1)) * 4 - 4">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "strTableFunc(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;):main.cpp">
       </ContextState>
       <ContextState
          contextName = "main:main.cpp">
@@ -32,6 +32,15 @@
             </PersistentString>
             <PersistentString
                value = "B">
+            </PersistentString>
+            <PersistentString
+               value = "type">
+            </PersistentString>
+            <PersistentString
+               value = "DtoBArr">
+            </PersistentString>
+            <PersistentString
+               value = "result.size()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -44,10 +53,88 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "DtoB(int, int, int, int, int, int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "DtoBArr">
+            </PersistentString>
+            <PersistentString
+               value = "inpStr[cmdIdx]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "strTableFunc(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "chkCrossPoint(int, int, int, int, int, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "dist">
+            </PersistentString>
+            <PersistentString
+               value = "maxRad">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BtoD(int, int, int, int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "stCol + colRan">
+            </PersistentString>
+            <PersistentString
+               value = "stRow + rowRan">
+            </PersistentString>
+            <PersistentString
+               value = "stRow">
+            </PersistentString>
+            <PersistentString
+               value = "stCol">
+            </PersistentString>
+            <PersistentString
+               value = "inpArr[i][j]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DtoB(int, int, int, int, int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "DtoBArr">
+            </PersistentString>
+            <PersistentString
+               value = "inpStr[cmdIdx]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "spinAndSlide(int):main.cpp">
          <PersistentStrings>
             <PersistentString
                value = "B">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "slide(int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "A">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BtoD(int, int, int, int, int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "stRow + N">
+            </PersistentString>
+            <PersistentString
+               value = "stCol + N">
+            </PersistentString>
+            <PersistentString
+               value = "inpArr[y][x]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
