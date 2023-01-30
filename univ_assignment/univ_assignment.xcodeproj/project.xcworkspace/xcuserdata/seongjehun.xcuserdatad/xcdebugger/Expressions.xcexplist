@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "henry(int, int, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "cardDP(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;, int):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "showPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GCD(int, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "v">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

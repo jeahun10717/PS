@@ -28,19 +28,28 @@
          contextName = "main:main.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "A">
+               value = "v[3] % 4">
             </PersistentString>
             <PersistentString
-               value = "B">
+               value = "v[2] % 4">
             </PersistentString>
             <PersistentString
-               value = "type">
+               value = "check">
             </PersistentString>
             <PersistentString
-               value = "DtoBArr">
+               value = "cnt">
             </PersistentString>
             <PersistentString
-               value = "result.size()">
+               value = "dp[0][1][4]">
+            </PersistentString>
+            <PersistentString
+               value = "dist_inv">
+            </PersistentString>
+            <PersistentString
+               value = "v[0] % 4">
+            </PersistentString>
+            <PersistentString
+               value = "v[1] % 4">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -81,7 +90,7 @@
          contextName = "BtoD(int, int, int, int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):main.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "stCol + colRan">
+               value = "stCol">
             </PersistentString>
             <PersistentString
                value = "stRow + rowRan">
@@ -90,10 +99,18 @@
                value = "stRow">
             </PersistentString>
             <PersistentString
-               value = "stCol">
+               value = "inpArr[i][j]">
             </PersistentString>
             <PersistentString
-               value = "inpArr[i][j]">
+               value = "stCol + colRan">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "spinAndSlide(int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "B">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -109,14 +126,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "spinAndSlide(int):main.cpp">
-         <PersistentStrings>
-            <PersistentString
-               value = "B">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "slide(int):main.cpp">
          <PersistentStrings>
             <PersistentString
@@ -128,13 +137,21 @@
          contextName = "BtoD(int, int, int, int, int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):main.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "stRow + N">
-            </PersistentString>
-            <PersistentString
                value = "stCol + N">
             </PersistentString>
             <PersistentString
                value = "inpArr[y][x]">
+            </PersistentString>
+            <PersistentString
+               value = "stRow + N">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "solveDP():main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "dp[A][B][C]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
