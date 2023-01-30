@@ -4,7 +4,7 @@
 def prime1(n: int):
     if(n < 2):
         return False # 1 의 처리를 위한 부분
-    for i in range(2:n):
+    for i in range(2, n):
         if n % i == 0: # 2부터 차례로 돌면서 나눠지는 수가 있으면 소스가 아님
             return False
     return True # 위에서 모든 경우를 찾아봤을 때 나눠지는 수가 없는 경우
@@ -13,7 +13,7 @@ def prime1(n: int):
 def prime2(n: int):
     if(n < 2):
         return False
-    for i in range(2, n / 2 + 1):
+    for i in range(2, int(n / 2) + 1):
         if(n % i == 0):
             return False
     return True
@@ -21,5 +21,16 @@ def prime2(n: int):
 # 3. "sqrt(n)" 까지 돌면서 "모든 수"를 돌면서 나눠지는지 확인
 def prime3(n: int):
     if(n < 2):
-        return False:
-    for i in range(2, n) 
+        return False
+    for i in range(2, n):
+        if(i * i <= n):
+            if(n % i == 0): return False
+        else: break
+    return True
+
+print(prime1(17))
+print(prime2(17))
+print(prime3(17))
+print(prime1(183))
+print(prime2(183))
+print(prime3(2))
