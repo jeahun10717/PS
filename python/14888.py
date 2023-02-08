@@ -8,14 +8,10 @@ plus, minus, multi, divide = map(int, input().split())
 
 opList = []
 
-for i in range(plus):
-    opList.append(0)
-for i in range(minus):
-    opList.append(1)    
-for i in range(multi):
-    opList.append(2)
-for i in range(divide):
-    opList.append(3)
+opList.extend([0 for i in range(plus)])
+opList.extend([1 for i in range(minus)])
+opList.extend([2 for i in range(multi)])
+opList.extend([3 for i in range(divide)])
 
 minPermu = int(1e9)
 maxPermu = int(-1e9)
