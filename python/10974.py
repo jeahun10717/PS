@@ -8,3 +8,4 @@ for i in permutations(numList, len(numList)):
     for tupIdx in range(N):
         print(i[tupIdx], end=' ')
     print()
+    
